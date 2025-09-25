@@ -17,8 +17,8 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Career', path: '/Career' },
-    { name: 'Services', path: '/Services' },
+    { name: 'Career', path: '/career' },
+    { name: 'Services', path: '/services' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -123,5 +123,6 @@ const Navigation = () => {
     </nav>
   );
 };
+
 
 export default Navigation;
