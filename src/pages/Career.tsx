@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Clock, DollarSign, Users, TrendingUp, Award, Calendar, Briefcase, ChevronDown, ChevronUp, Target } from 'lucide-react';
+import { MapPin, Clock, DollarSign, Users, TrendingUp, Award, Calendar, Briefcase, ChevronDown, ChevronUp, Target, BookOpen, Crown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -96,31 +96,31 @@ const Career = () => {
     level: string;
     duration: string;
     description: string;
-    icon: string | React.ComponentType<{ className?: string }>;
+    icon: React.ComponentType<{ className?: string }>;
   }> = [
     {
       level: 'Junior Consultant',
       duration: '0-2 years',
       description: 'Learn foundational skills, work on client projects under supervision',
-      icon: '📚'
+      icon: BookOpen
     },
     {
       level: 'Consultant',
       duration: '2-4 years', 
       description: 'Lead small projects, develop specialization, mentor junior staff',
-      icon: '💼'
+      icon: Briefcase
     },
     {
       level: 'Senior Consultant',
       duration: '4-7 years',
       description: 'Manage large projects, client relationships, technical leadership',
-      icon: '🎯'
+      icon: Target
     },
     {
       level: 'Principal/Director',
       duration: '7+ years',
       description: 'Strategic planning, business development, industry expertise',
-      icon: '👑'
+      icon: Crown
     }
   ];
 
@@ -201,11 +201,7 @@ const Career = () => {
               {careerPath.map((step, index) => (
                 <div key={step.level} className="relative flex items-start mb-12 animate-slide-in-right" style={{ animationDelay: `${index * 0.3}s` }}>
                   <div className="flex-shrink-0 w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white shadow-medium">
-                    {typeof step.icon === 'string' ? (
-                      <span className="text-2xl">{step.icon}</span>
-                    ) : (
-                      <step.icon className="w-8 h-8" />
-                    )}
+                    <step.icon className="w-8 h-8" />
                   </div>
                   <div className="ml-8 flex-1">
                     <h3 className="text-2xl font-semibold mb-2">{step.level}</h3>
