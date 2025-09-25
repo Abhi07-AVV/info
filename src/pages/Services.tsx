@@ -27,7 +27,7 @@ const Services = () => {
       icon: Cloud,
       features: ['Multi-cloud Strategy', '24/7 Monitoring', 'Cost Optimization', 'Security Compliance'],
       technologies: ['AWS', 'Azure', 'Google Cloud', 'Kubernetes', 'Docker'],
-      pricing: 'Starting from $5,000/month',
+      pricing: 'Engagement-based pricing',
       category: 'Infrastructure'
     },
     {
@@ -38,7 +38,7 @@ const Services = () => {
       icon: Shield,
       features: ['Threat Assessment', 'Incident Response', 'Compliance Management', 'Security Training'],
       technologies: ['SIEM', 'EDR', 'Firewall Management', 'Zero Trust', 'Multi-Factor Authentication'],
-      pricing: 'Custom pricing available',
+      pricing: 'Engagement-based pricing',
       category: 'Security'
     },
     {
@@ -49,7 +49,7 @@ const Services = () => {
       icon: Brain,
       features: ['Predictive Analytics', 'Process Automation', 'NLP Solutions', 'Computer Vision'],
       technologies: ['TensorFlow', 'PyTorch', 'scikit-learn', 'OpenAI', 'Hugging Face'],
-      pricing: 'Project-based from $15,000',
+      pricing: 'Engagement-based pricing',
       category: 'Innovation'
     },
     {
@@ -71,7 +71,7 @@ const Services = () => {
       icon: Database,
       features: ['Data Visualization', 'Real-time Dashboards', 'Predictive Modeling', 'Data Governance'],
       technologies: ['Power BI', 'Tableau', 'Snowflake', 'Apache Spark', 'Databricks'],
-      pricing: 'Starting from $8,000/month',
+      pricing: 'Engagement-based pricing',
       category: 'Analytics'
     },
     {
