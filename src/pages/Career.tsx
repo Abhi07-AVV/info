@@ -100,25 +100,25 @@ const Career = () => {
   }> = [
     {
       level: 'Junior Consultant',
-      duration: '0-2 years',
+      duration: '0-3 years',
       description: 'Learn foundational skills, work on client projects under supervision',
       icon: BookOpen
     },
     {
       level: 'Consultant',
-      duration: '2-4 years', 
+      duration: '3-6 years', 
       description: 'Lead small projects, develop specialization, mentor junior staff',
       icon: Briefcase
     },
     {
       level: 'Senior Consultant',
-      duration: '4-7 years',
+      duration: '6-10 years',
       description: 'Manage large projects, client relationships, technical leadership',
       icon: Target
     },
     {
       level: 'Principal/Director',
-      duration: '7+ years',
+      duration: '15+ years',
       description: 'Strategic planning, business development, industry expertise',
       icon: Crown
     }
