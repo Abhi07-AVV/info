@@ -15,10 +15,11 @@ export default defineConfig({
     },
   },
   // GitHub Pages deployment configuration
-  base: "/info/",
+  base: "/",
   build: {
     outDir: "dist",
     assetsDir: "assets",
     sourcemap: false,
   },
+
 });
