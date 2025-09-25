@@ -1,4 +1,4 @@
-import { ArrowRight, Cloud, Shield, Brain, Cog, Database, Smartphone, Check, Star, Award, Users, Clock, Target, Zap } from 'lucide-react';
+import { ArrowRight, Cloud, Shield, Brain, Cog, Database, Smartphone, Check, Star, Award, Users, Clock, Target, Zap, Handshake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -254,7 +254,7 @@ const Services = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center animate-scale-in">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white mb-4 mx-auto">
-                <span className="text-2xl">🎯</span>
+                <Target className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Expert Consultants</h3>
               <p className="text-muted-foreground">Certified professionals with deep industry expertise and proven track records.</p>
@@ -262,7 +262,7 @@ const Services = () => {
             
             <div className="text-center animate-scale-in [animation-delay:0.2s]">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white mb-4 mx-auto">
-                <span className="text-2xl">⚡</span>
+                <Zap className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Rapid Implementation</h3>
               <p className="text-muted-foreground">Agile methodologies ensure quick deployment and immediate business value.</p>
@@ -270,7 +270,7 @@ const Services = () => {
             
             <div className="text-center animate-scale-in [animation-delay:0.4s]">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white mb-4 mx-auto">
-                <span className="text-2xl">🤝</span>
+                <Handshake className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Long-term Partnership</h3>
               <p className="text-muted-foreground">Ongoing support and strategic guidance to ensure sustained success.</p>
