@@ -47,7 +47,7 @@ const Home = () => {
       rating: 4,
     },
     {
-      name: 'Emily Rodriguez',
+      name: 'Rodriguez',
       company: '',
       text: 'Professional, reliable, and innovative. The perfect IT consultancy partner.',
       rating: 4,
@@ -55,9 +55,9 @@ const Home = () => {
   ];
 
   const stats = [
-    { icon: Users, label: 'Happy Clients', value: '500+' },
-    { icon: Award, label: 'Projects Completed', value: '1,200+' },
-    { icon: Clock, label: 'Years of Experience', value: '15+' },
+    { icon: Users, label: 'Happy Clients', value: '513+' },
+    { icon: Award, label: 'Projects Completed', value: '1,250+' },
+    { icon: Clock, label: 'Years of Experience', value: '12+' },
   ];
 
   return (
