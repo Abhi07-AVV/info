@@ -69,7 +69,7 @@ const Contact = () => {
   };
 
   const handleCallUs = () => {
-    window.open('tel:+917842525922', '_self');
+    window.open('tel:+1 307 529 1956', '_self');
   };
 
   const handleSendEmail = () => {
@@ -99,7 +99,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: 'Business Hours',
-      details: ['Mon - Fri: 8:00 AM - 6:00 PM PST', 'Sat: 9:00 AM - 2:00 PM PST']
+      details: ['Mon - Fri: 8:00 AM - 6:00 PM CST', 'Sat: 9:00 AM - 2:00 PM CST']
     }
   ];
 
@@ -108,19 +108,19 @@ const Contact = () => {
       city: 'INDIA',
       address: '',
       phone: '',
-      type: 'Headquarters'
+      type: ''
     },
     {
       city: 'USA',
       address: '',
       phone: '',
-      type: 'East Coast Office'
+      type: ''
     },
     {
-      city: 'Austin',
+      city: 'Mexico',
       address: '',
       phone: '',
-      type: 'Central Office'
+      type: ''
     }
   ];
 
