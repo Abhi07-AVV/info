@@ -12,8 +12,9 @@ export default defineConfig(({ command }) => {
     },
     base: command === 'build' ? '/info/' : '/', 
     server: {
-      host: '0.0.0.0',
-      port: 10000,
+      host: "0.0.0.0",
+      port: process.env.PORT || 10000,
+      allowedHosts: ["*"],
     },
     preview: {
       host: '0.0.0.0', 
@@ -21,4 +22,5 @@ export default defineConfig(({ command }) => {
     }
   }
 })
+
 
