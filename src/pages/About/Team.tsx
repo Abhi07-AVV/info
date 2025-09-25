@@ -1,9 +1,12 @@
 import { Target, Users, Handshake, Zap, Rocket, TrendingUp, Star, Cloud, Bot, Smartphone, Shield, BarChart3, Globe } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-
+import { useNavigate } from 'react-router-dom';
 const Team = () => {
-
+  const navigate = useNavigate();
+  const handleStartJourney = () => {
+    navigate('/contact');
+  };
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -39,13 +42,13 @@ const Team = () => {
               {
                 icon: Rocket,
                 title: 'Founded with Vision',
-                year: '2018',
+                year: '2013',
                 description: 'Started as a small team of passionate technologists with a vision to democratize cutting-edge technology solutions for businesses of all sizes.'
               },
               {
                 icon: TrendingUp,
                 title: 'Rapid Growth',
-                year: '2020-2022',
+                year: '2020-2023',
                 description: 'Expanded our services and client base, establishing ourselves as trusted partners in digital transformation across multiple industries.'
               },
               {
@@ -138,10 +141,6 @@ const Team = () => {
                       ))}
                     </div>
                   </div>
-                  
-                  <Button size="sm" variant="outline" className="w-full">
-                    Learn More
-                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -191,10 +190,7 @@ const Team = () => {
             through innovative technology solutions tailored to your unique needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-secondary text-lg px-8 py-4 animate-bounce-in">
-              Start Your Project
-            </Button>
-            <Button variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary animate-bounce-in" style={{ animationDelay: '0.2s' }}>
+            <Button variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary animate-bounce-in" style={{ animationDelay: '0.2s' }} onClick={handleStartJourney}>
               Schedule Consultation
             </Button>
           </div>
